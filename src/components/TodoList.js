@@ -5,8 +5,14 @@ import './Todolist.css'
 const TodoList = (props) => {
 
   const allTodos = props.todos.map((item) => {
-    return <Todo key={item.id} id={item.id} todo={item.todo} />
-})
+    return <Todo key={item.id}
+      id={item.id}
+      todo={item.todo}
+      checked={item.checked}
+      deleteTodo={props.deleteTodo}
+      checkTodo={props.checkTodo}
+    />
+  })
 
 
   return (

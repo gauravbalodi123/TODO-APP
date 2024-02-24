@@ -1,9 +1,9 @@
-input{
+.input-form input{
     width: 100%;
     box-sizing: border-box;
     font-size: 24px;
 }
 
-input:focus{
+.input-form input:focus{
     outline: none;
 }
